@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6,p,span,div,header,ul,ol,a{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 350;
+}
+body {
+    /* 
+    font-family: "Open Sans", sans-serif;
+    */
+}
+p{
+    font-size: 12px;
+}
+
+
+/*************************Banner Part************************************/
+#banner{
+    background-image: url(../src/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    margin: 40px 200px 0px 140px;
+}
+.banOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    margin: 250px 50px 510px 150px; 
+}
+.banOver h1, .banOver p{
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+/***************************Start sth new***************/
+.strtNew{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.strtNew h2{
+    margin: -90px 0px 20px 150px;
+}
+.sthLeft{
+    margin-left: 150px;
+    font-size: 12px;
+}
+.sthRight{
+    margin-top: 40px;
+    margin-right: 90px;
+    font-size: 12px;
+}
+
+
+/***************************Grid Items***************/
+.gridSection{
+    margin: 0px 190px 0px 275px;
+}
+.gridItem, .gridItem2, .gridItemImg, .gridItemImg2 {
+    position: relative;
+}
+.gridItem, .gridItem2{
+    padding: 40px;
+    margin-left: -30px;
+}
+.gridItem p, .gridItem h2, .gridItem a,
+.gridItemImg p, .gridItemImg h2, .gridItemImg a,
+.gridItemImg2 p, .gridItemImg2 h2, .gridItemImg2 a{
+    color: white;
+    margin: 15px 15px 30px 15px;
+}
+.gridItem2 p, .gridItem2 h2, .gridItem2 a{
+    color: white;
+    margin-bottom: 20px;
+}
+.gridItemImg, .gridItemImg2{
+    padding: 40px;
+    margin-left: -30px;
+    transition: all linear .3s;
+}
+.gridItemImg:hover{
+    background-image: url(../src/bg2.jpg);
+    transition: all linear .3s;
+    color: black;
+}
+.gridItemImg2:hover{
+    background-image: url(../src/bg4.jpg);
+    transition: all linear .3s;
+    color: black;
+}
+.like {
+    position: absolute;
+    top: 180px;
+    right: 10px; 
+    color: white;
+}
+
+
+/********************Details****************************************/
+.details{
+    margin: 70px 180px 50px 240px;
+}
+.details h2{
+    padding-bottom: 50px;
+}
+.details h6, .details p{
+    padding-bottom: 20px;
+}
+
+
+/******************************Power****************************************/
+.power{
+    background-image: url(../src/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.powerOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    margin: 450px 50px 150px 150px; 
+}
+.powerOver h1, .powerOver p{
+    padding-bottom: 10px;
+    color: white;
+}
+.powerOver p{
+    margin-top: 10px;
+}
+
+
+/*****************************Reason****************************************/
+.reason{
+    background-color: #82ca9c;
+    padding: 50px 140px 100px 180px;
+}
+.reason h3, .reason h6, .reason p{
+    color: white;
+}
+.reason h3{
+    margin-bottom: 50px;
+}
+.reason h6{
+    margin-bottom: 20px;
+}
+
+
+/*****************************Plan****************************************/
+.plan {
+    background-color: #f6f7fa;
+    padding: 50px 140px 100px 180px;
+}
+.planBox{
+    padding: 40px 40px 40px 50px;
+}
+.plan p {
+    margin: 0px 150px 20px 0px;
+}
+
+.plan h6 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.buy {
+    background-color: #82ca9c;
+    padding: 10px 23px 10px 23px;
+    font-size: 10px;
+    word-spacing: 3px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.plan_icon ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.plan_icon ul li {
+    margin-top: 20px;
+    padding-right: 15px;
+}
+
+.plan_icon ul li a {
+    color: #c5c5c5;
+    transition: all linear .3s;
+}
+
+.planBox:hover {
+    box-shadow: 0 0 10px #c5c5c5,
+                0 0 20px #c5c5c5,
+                0 0 40px #c5c5c5,
+                0 0 80px #c5c5c5;
+                transition: all linear .3s;
+}
+.type{
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+    font-weight: bold;
+}
+/* clearfix method */
+.planBox::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*****************************Footer****************************************/
+footer{
+    background-color: #192431;
+    color: white;
+}
+.description{
+    padding: 80px 0px 80px 120px;
+}
+.clmFooter{
+    padding: 0px 0px 100px 105px;
+}
+footer h6{
+    margin-bottom: 20px;
+}
+.clmFooter .row .col-md-3 {
+    margin-right: 65px;
+}
+.clmFooter .row .col-md-3:last-child {
+    margin-right: 0;
+}
+.rgtFooter{
+    margin-top: 15px;
+    padding-right: 240px;
+    font-size: 10px;
+    color: #506276;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -170px;
+    margin-top: 30px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px 10px 15px;
+    border: none;
+    background-color: #82ca9c;
+    border: 1px solid #82ca9c;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: -4px;
+}
+
+.search-button:hover {
+    background-color: #6fa88c;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

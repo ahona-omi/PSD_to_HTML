@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #555555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+header,
+ul,
+ol,
+a {
+    margin: 0;
+    padding: 0;
+    color: #555555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif;
+}
+
+a,
+p,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-size: 13px;
+}
+
+body {
+    /* 
+    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
+     */
+
+}
+
+/************************* Banner Part ************************************/
+#banner {
+    position: relative;
+    background-color: #555556;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand {
+    margin-left: 120px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+
+.nav-link {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #998675;
+    text-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+}
+
+.header_icon {
+    margin-left: -150px;
+    margin-right: 40px;
+}
+
+.header_icon ul li {
+    color: white;
+    float: left;
+    padding-right: 22px;
+}
+
+.header_icon ul li a i {
+    color: white;
+    transition: all linear .3s;
+}
+
+.header_icon ul li a i:hover {
+    color: #998675;
+    transition: all linear .3s;
+    text-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+}
+
+/************************* Banner Overlay ***********************************/
+.carousel-item {
+    position: relative;
+    height: 924px;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/************************* Carousel Indicators ******************************/
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    height: 12px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border: 1px solid transparent;
+}
+
+.carousel-indicators .active {
+    background-color: transparent;
+    border: 0.1px solid #998675;
+    opacity: 1;
+}
+
+/* Banner Image Text */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.carousel-caption h4 {
+    font-weight: 400;
+    color: white;
+}
+
+.carousel-caption h2 {
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+}
+
+.carousel-caption p {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.btn {
+    background-color: #998675;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all linear .3s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #998675;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+    transition: all linear .3s;
+}
+
+
+/***************************** Divide Column ********************************/
+.divide {
+    padding: 100px 200px;
+    color: #555555;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.divide i,
+.divide h4,
+.divide p {
+    margin-bottom: 20px;
+}
+
+.divide i {
+    font-size: 40px;
+}
+
+.divHead {
+    margin-bottom: 10px;
+}
+
+.divHead:hover i,
+.divHead:hover h4,
+.divHead:hover .divLine {
+    color: #998675;
+    opacity: 1;
+}
+
+/***************** Retain the original color for p **************************/
+.divHead:hover p {
+    color: inherit;
+}
+
+.divLine {
+    width: 25%;
+    height: 3px;
+    background-color: #998675;
+    opacity: 0.5;
+    margin: 0 auto;
+}
+
+
+/***************************** Images Slide *********************************/
+.imgSlide {
+    padding: 50px 50px 50px 50px;
+    background-color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.imgSlide p {
+    margin: 20px 250px 20px 250px;
+}
+
+.imgSlide .row {
+    margin-left: 100px;
+}
+
+.imgSlide img {
+    width: 56%;
+    height: 56%;
+    object-fit: cover;
+}
+
+.rightImg {
+    margin-top: 69px;
+}
+
+.midImg {
+    margin-left: -420px;
+    z-index: 1;
+}
+
+.leftImg {
+    margin-top: 69px;
+    margin-left: -480px;
+}
+
+
+/***************************** Purchase *********************************/
+.purchase {
+    background: linear-gradient(to left, #4e3427, #392821, #211b19);
+    padding: 30px 30px 30px 230px;
+    margin-top: -50px;
+}
+
+.purchase .btn {
+    margin-right: 180px;
+}
+
+.purchase .btn-primary:hover {
+    background-color: #7a6a55;
+    color: #ffffff;
+}
+
+.h4-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.h4-wrapper .clrHead {
+    color: #998675;
+}
+
+.h4-wrapper h4 {
+    margin-right: 15px;
+    white-space: nowrap;
+    color: white;
+}
+
+
+/**************** Project ***************************************/
+.project {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.project p {
+    margin-top: 15px;
+    padding: 0px 300px 0px 300px;
+    margin-bottom: 30px;
+}
+
+.projBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.project ul li {
+    float: left;
+    padding: 3px 15px 4px 15px;
+    border: 1px solid #bfa98d;
+    margin: 0px 25px 30px 0px;
+    transition: all linear .3s;
+}
+
+.project ul li:hover {
+    background-color: #998675;
+    border-color: #998675;
+    color: white;
+    transition: all linear .3s;
+}
+
+.project ul li a:hover {
+    color: white;
+    transition: all linear .3s;
+}
+
+.project .row {
+    margin-left: 110px;
+    margin-right: 30px;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: #fbfaf8;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.tri {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fbfaf8;
+    margin: -9px 0px 0px 15px;
+}
+
+.card-body {
+    width: 100%;
+    padding: 15px;
+}
+
+.card-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #b8a18c;
+}
+
+.card-text {
+    font-size: 10px;
+    margin-bottom: 50px;
+    color: #d1d1d1;
+}
+
+.card_overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+
+.card_overlay i {
+    color: #fff;
+    background-color: transparent;
+    margin-top: -100px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+
+.card:hover .card_overlay {
+    display: flex;
+    transition: all linear .3s;
+
+}
+
+.card:hover .card-body {
+    background-color: #392821;
+    transition: all linear .3s;
+}
+
+.card:hover .card-title {
+    color: white;
+    z-index: -1;
+    transition: all linear .3s;
+}
+
+.card:hover .card-text {
+    color: #d9bb9e;
+    font-weight: 500;
+    z-index: -1;
+    transition: all linear .3s;
+}
+
+.card:hover .tri {
+    border-bottom: 10px solid #392821;
+    transition: all linear .3s;
+}
+
+.card_overlay i:hover {
+    color: #d9bb9e;
+    transition: all linear .3s;
+}
+
+.project .btn {
+    margin: 30px;
+}
+
+
+/***************************** Video ***********************************/
+.video {
+    margin-bottom: 60px;
+}
+
+
+/************************** Excellent ***********************************/
+.ex {
+    padding: 0px 100px 0px 300px;
+}
+
+.ex h4 {
+    margin: 100px 0px 0px -100px;
+    font-weight: 600;
+}
+
+.exDes {
+    margin: 20px 50px 25px -100px;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px -15px;
+}
+
+.point i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #998675;
+}
+
+
+/************************** Number ***********************************/
+.num {
+    background: linear-gradient(to left, #4e3427, #392821, #211b19);
+    padding: 50px 0px 50px 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.num i {
+    font-size: 30px;
+    color: #998675;
+    margin-bottom: 15px;
+}
+
+.num h2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.num p {
+    color: #998675;
+    font-weight: 600;
+    margin: 5px 0px 15px 0px;
+}
+
+.numLine {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+/************************** Post ***********************************/
+.cardP {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: #fbfaf8;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+}
+
+.cardP::before {
+    content: attr(data-date-month);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px 0;
+    border-radius: 3px 3px 0 0;
+    font-size: 21px;
+    display: block;
+}
+
+.cardP::after {
+    content: attr(data-date-day);
+    position: absolute;
+    top: 41px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0 10px 5px;
+    border-radius: 0 0 3px 3px;
+    font-size: 12px;
+    display: block;
+}
+.cardP:hover::before {
+    background: rgba(183, 147, 115, 0.5);
+}
+.cardP:hover::after {
+    background: rgba(95, 72, 52, 0.8);
+}
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    width: 100%;
+    padding: 18px;
+}
+
+.cardP h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.cardP h6 {
+    font-size: 10px;
+    margin-bottom: 50px;
+    color: #555555;
+}
+
+.cardP a {
+    font-weight: 500;
+    color: #998675;
+}
+
+.card_overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+
+.cardP:hover .card_overlay {
+    display: flex;
+    transition: all linear .3s;
+}
+
+.cardP:hover .card-body {
+    background-color: #392821;
+    transition: all linear .3s;
+}
+
+.cardP:hover .card-title {
+    color: #d9bb9e;
+    z-index: -1;
+    transition: all linear .3s;
+}
+
+.cardP:hover .card-text {
+    color: white;
+    font-weight: 500;
+    z-index: -1;
+    transition: all linear .3s;
+}
+
+.cardP:hover a {
+    color: #d9bb9e;
+    z-index: -1;
+    transition: all linear .3s;
+}
+
+.project .btn {
+    margin: 30px;
+}
+
+
+/************************** Sponsors ***********************************/
+.brand{
+    background: url(../src/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+.brand img{
+    margin-right: 70px;
+}
+
+
+/******************************** footer *************************/
+footer {
+    background-color: #191919;
+    padding: 50px 50px 50px 160px;
+}
+
+footer p{
+    margin: 20px 0px 20px 0px;
+    font-weight: 600;
+}
+footer h4, footer a, footer a i{
+    color: white;
+}
+.ftLine{
+    background-color: #363636;
+    width: 100%;
+    height: 1px;
+    display: block;
+}
+footer img{
+    margin: 0px 8px 10px 0px;
+}

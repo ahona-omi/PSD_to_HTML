@@ -1,0 +1,1125 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #444444;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,header,ul,ol,a {
+    margin: 0;
+    padding: 0;
+    color: #444444;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6,a {
+    font-family: "Montserrat", sans-serif;
+}
+p{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+}
+body {
+    /* 
+    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", sans-serif;
+     */
+
+}
+
+/************************* Banner Part ************************************/
+.banner{
+    background-color: #fbfbfb;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+
+.headBan{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    padding-top: 250px;
+}
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #ffe400;
+}
+h1{
+    font-weight: 900;
+    margin-left: -10px;
+    margin-left: -130px;
+    font-size: 50px;
+    margin-right: -70px;
+}
+
+.banner p{
+    margin: 30px -70px 20px 20px;
+}
+.banner a{
+    margin-top: 100px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    border: 1px solid #444444;
+    padding: 10px 15px;
+    transition: all linear .3s;
+}
+.banner a:hover{
+    font-size: 13px;
+    padding: 12px 17px 12px 17px;
+    transition: all linear .3s;
+    border-color: transparent;
+    box-shadow: 0px 8px 15px #444444;
+    text-shadow: 0px 8px 15px #444444;
+}
+
+.lineBan{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: left;
+}
+.lineBan1, .lineBan3{
+    height: 10px;
+    width: 5px;
+    color: #e3e3e3;
+}
+.lineBan2{
+    height: 10px;
+    width: 5px;
+    color: #444444;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    margin-left: 36px;
+}
+
+
+/************************* Navigation Part ************************************/
+nav{
+    background-color: #2a2a2a;
+    color: white;
+    text-transform: uppercase;
+}
+nav img{
+    margin-left: 40px;
+    margin-right: -80px;
+}
+nav a{
+    margin-left: 30px;
+}
+.nav-item{
+    font-size: 12px
+}
+.navbar .nav-link.active,
+.nav-link:hover {
+    color: #ffe400;
+}
+
+
+/*************************** About Part ************************************/
+.about{
+    background-color: white;
+}
+.aboutHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 300px 50px 300px;
+}
+
+/*************************** Common Heading H2, H3 ************************************/
+.commonH2{
+    font-weight: 900;
+    color: #e8e8e8;
+    font-size: 60px;
+}
+.commonH3{
+    font-weight: bold;
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+
+.aboutBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.ringAbout{
+    margin-top: -200px;
+    height: 27%;
+    width: 27%;
+}
+
+.aboutBtn{
+    margin-top: 50px;
+}
+
+/*************************** Common Button 2ta ************************************/
+.miBtn{
+    background-color: black;
+    color: #ffe400;
+    padding: 12px 45px;
+    margin-right: 20px;
+    transition: all linear .3s;
+}
+.miBtn:hover{
+    transition: all linear .3s;
+    border-color: transparent;
+    box-shadow: 0px 8px 15px #ffe400;
+    text-shadow: 0px 8px 15px #ffe400;
+    font-size: 13px;
+    padding: 14px 47px;
+}
+
+.jeBtn:hover{
+    transition: all linear .3s;
+    border-color: transparent;
+    box-shadow: 0px 8px 15px black;
+    text-shadow: 0px 8px 15px black;
+    font-size: 13px;
+    padding: 14px 22px;
+}
+.jeBtn{
+    background-color: #ffe400;
+    color: black;
+    padding: 12px 20px;
+    transition: all linear .3s;
+}
+
+.aboutBody{
+    margin-bottom: -400px;
+}
+.aboutContent{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: -50px;
+}
+.aboutWrite{
+    background-color: #212121;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 90px 80px;
+    position: relative;
+    transition: all linear .3s;
+}
+.aboutWrite i{
+    color: #ffe400;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+.aboutWrite h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about_overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dec700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+    opacity: 0;
+    box-shadow: 0px 8px 15px black;
+}
+.about_overlay i{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.about_overlay h5{
+    color: white;
+    font-size: 14.5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about_overlay p{
+    color: white;
+    margin: 0px 10px;
+
+}
+
+.aboutBox {
+    position: relative;
+    transition: all linear .3s;
+}
+.aboutBox:hover .about_overlay {
+    display: flex;
+    transition: all linear .3s;
+    opacity: 1;
+}
+
+.aboutTail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 300px 0px 300px;
+}
+.ipad{
+    margin-left: auto;
+    margin-right: -300px;
+    margin-top: 300px;
+}
+
+.aboutTailHead{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.aboutNo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+.aboutTNum{
+    margin-left: -190px;
+    margin-right: -120px;
+    padding-bottom: 70px;
+}
+.aboutTNum h2{
+    font-weight: 800;
+    color: #2a2a2a;
+}
+
+
+/************************* Responsive Part ************************************/
+.responsive{
+    background-color: #fafafa;
+}
+
+.respLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.respLeft img{
+    margin: -70px 50px 0px -100px;
+}
+.respLeftWrite{
+    margin-top: 70px;
+}
+.respLeftWrite ul{
+    list-style: inside;
+    list-style-type: style star;
+    margin: 50px 0px;
+    font-size: 12px;
+}
+.respLeftWrite ul li{
+    margin-bottom: 10px;
+}
+
+.man{
+    margin: 20px 0px;
+}
+
+
+/********************************* Info Part ************************************/
+.info{
+    background-image: url(../src/banner1.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 178px 400px;
+}
+
+.info h2{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.info p{
+    color: white;
+    margin-bottom: 70px;
+    font-size: 14px;
+}
+.info a{
+    border: 0.5px solid white;
+    background-color: transparent;
+    margin-left: 20px;
+    padding: 20px 30px;
+    color: white;
+    font-size: 14px;
+    transition: all linear .3s;
+}
+.info a:hover{
+    border-color: transparent;
+    background-color: #ffe400;
+    padding: 22px 32px;
+    color: black;
+    font-size: 16px;
+    transition: all linear .3s;
+    box-shadow: 0px 8px 15px black;
+    text-shadow: 0px 8px 15px black;
+}
+
+
+
+/********************************* Feature Part ************************************/
+.ftHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.feature .container{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.ftBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ftBox i{
+    width: 110px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ftWrite{
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.ftWrite h6{
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.ftWrite p{
+    color: #757575;
+}
+
+
+/********************************* Work Part ************************************/
+.work{
+    background-color: white;
+}
+.wrkHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #ffe400;
+}
+.wrkBtn i{
+    color: white;
+    padding: 10px 12px;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.wrkBtn a{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 10px 15px;
+    margin-left: 10px;
+    transition: all linear .3s;
+}
+.wrkBtn a:hover{
+    background-color: black;
+    color: #ffe400;
+    padding: 12px 17px;
+    font-size: 14px;
+    transition: all linear .3s;
+    box-shadow: 0px 8px 15px black;
+    text-shadow: 0px 8px 15px black;
+}
+.workImgDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.workPic {
+    position: relative;
+    transition: all linear .3s;
+    width: 100%;
+    height: 100%;
+}
+.work_overlay {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: all linear .3s;
+    opacity: 0;
+}
+.workHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10px;
+}
+.workHead h6{
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.workHead p{
+    color: #2a2a2a;
+    font-size: 8px;
+    padding-left: 5px;
+}
+.workIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all linear .3s;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 30%;
+    margin-bottom: 70px;
+    margin-right: 20px;
+}
+.workIcon i {
+    color: black;
+    transition: all linear .3s;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.workIcon i:hover {
+    text-shadow: 0px 8px 15px black;
+    transition: all linear .3s;
+    border-color: transparent;
+    background-color: #ffe400;
+    height: 32px;
+    width: 32px;
+    font-size: 17px;
+}
+.workImgItem {
+    position: relative;
+    transition: all linear .3s;
+}
+.workImgItem:hover .work_overlay {
+    display: flex;
+    transition: all linear .3s;
+    opacity: 1;
+}
+
+
+
+/********************************* Service Part ************************************/
+.service{
+    margin-left: -250px;
+    padding-top: 100px;
+}
+.service img{
+    width: 100%;
+    height: 100%;
+}
+
+.srviceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.srviceBoxItem{
+    padding: 50px;
+}
+.srviceBoxItem i{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.srviceBoxItem h6{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+srviceBoxItem p{
+    color: #818181;
+}
+
+
+/********************************* Pricing Part ************************************/
+.price{
+    background-image: url(../src/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.price .container{
+    margin-top: 50px;
+}
+.planHead{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.planHead p, h2, h5{
+    color: white;
+}
+.planType{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.planHead h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+.plnPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.planBody{
+    background-color: white;
+    width: 86%;
+    margin-left: 23.5px;
+    transition: all linear .3s;
+}
+.plan1stClmn{
+    padding: 50px 0px 20px 0px;
+}
+.planClmn{
+    padding: 20px 0px;
+    border-top: 1px solid #e6e6e6;
+}
+.plan1stClmn p, .planClmn p{
+    color: #808080;
+}
+.planLastClmn{
+    padding: 10px 0px;
+    border-top: 4.5px solid #ffe400;
+    transition: all linear .3s;
+}
+.planLastClmn a{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all linear .3s;
+}
+
+.planBody:hover{
+    transition: all linear .3s;
+    box-shadow: 0px 8px 15px black;
+}
+.planLastClmn:hover{
+    border: 2px solid black;
+    background-color: #e7e1ac;
+    transition: all linear .3s;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 12px 0px;
+}
+.planLastClmn a:hover{
+    transition: all linear .3s;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+
+/********************************* Expert Part ************************************/
+.expert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 200px;
+}
+
+.expert .container{
+    margin-top: 50px;
+}
+.expert img{
+    width: 100%;
+    height: 100%;
+}
+.name{
+    background-color: #ebebeb;
+    border-top: 4px solid white;
+    border-bottom: 1px dashed #9d9c9c;
+    font-weight: 700;
+    padding: 20px;
+}
+.work{
+    background-color: #ebebeb;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.person {
+    margin-top: 32px;
+    position: relative;
+    transition: all linear .3s;
+}
+.expert_overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+    opacity: 0;
+}
+.expert_overlay h5{
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.expert_overlay h6{
+    color: #2a2a2a;
+    font-weight: 600;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+.expert_overlay p{
+    color: #2a2a2a;
+    padding: 30px;
+}
+.expertIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all linear .3s;
+    padding: 25px;
+    border-top: 1px dashed #2a2a2a;
+}
+.expertIcon i {
+    color: #6b6000;
+    transition: all linear .3s;
+    padding-right: 30px;
+}
+.expertIcon i:hover {
+    text-shadow: 0px 8px 15px black;
+    transition: all linear .3s;
+    font-size: 17px;
+}
+.expert_item {
+    position: relative;
+    transition: all linear .3s;
+}
+.expert_item:hover .expert_overlay {
+    display: flex;
+    transition: all linear .3s;
+    opacity: 1;
+}
+
+
+/********************************* Impress Part ************************************/
+.impress{
+    background-image: url(../src/banner4.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 178px 400px;
+}
+
+.impress h2{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.impress p{
+    color: white;
+    margin-bottom: 100px;
+    font-size: 14px;
+}
+.impress a{
+    background-color: #ffe400;
+    color: black;
+    margin-left: 20px;
+    padding: 20px 30px;
+    font-size: 14px;
+    transition: all linear .3s;
+    text-transform: uppercase;
+}
+.impress a:hover{
+    background-color: white;
+    padding: 22px 32px;
+    font-size: 16px;
+    transition: all linear .3s;
+    box-shadow: 0px 8px 15px black;
+    text-shadow: 0px 8px 15px black;
+}
+
+
+/********************************* Blog Part ************************************/
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blog .container{
+    margin: 100px;
+}
+.blog img, .blog video{
+    margin-bottom: -20px;
+}
+
+.blogDate{
+    background-color: #f9f9f9;
+    padding: 9px;
+    font-weight: 600;
+    border-radius: 20%;
+    display: inline-block;
+    z-index: 1;
+    margin-bottom: 30px;
+    position: relative;
+    /* top: -30px;  */
+}
+.blog h6{
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.blogBy{
+    font-size: 8px;
+    margin-bottom: 20px;
+}
+.blog a{
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 30%;
+    text-transform: uppercase;
+    font-size: 9px;
+    transition: all linear .3s;
+}
+.blog a:hover{
+    background-color: #ffe400;
+    border: 1px solid black;
+    padding: 11px;
+    font-size: 11px;
+    transition: all linear .3s;
+}
+
+
+/********************************* Contact Part ************************************/
+.contact{
+    background-image: url(../src/map.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.contact .container .row .col-md-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.contact .container .row .col-md-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+}
+.contact input{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-color: transparent;
+    font-size: 12px;
+}
+.contact input:hover{
+    border-color: black;
+}
+#contact .form-control:focus {
+    border-color: #ffe400;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: #808080;
+    opacity: 0.8;
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+.contact button{
+    background-color: #ffe400;
+    border-color: transparent;
+    color: #2a2a2a;
+    padding: 10px 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.contact button:hover{
+    background-color: white;
+    border: 1px solid #2a2a2a;
+    padding: 12px 42px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    transition: all linear .3s;
+    box-shadow: 0px 8px 15px black;
+    text-shadow: 0px 8px 15px black;
+}
+
+
+/********************************* Map Part ************************************/
+.map {
+    position: relative;
+}
+
+.mapContent {
+    position: relative;
+}
+
+.map-link {
+    display: block;
+    position: relative;
+}
+
+.wholeMap_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(255, 228, 0, 0.8); 
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.wholeMap_overlay h4{
+    font-weight: 700;
+    margin-right: 10px;
+    position: relative;
+    transition: all linear .3s;
+}
+.wholeMap_overlay i{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.map-link:hover .wholeMap_overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+/********************************* Footer Part ************************************/
+footer{
+    background-color: #212121;
+    color: white;
+}
+footer .container{
+    padding: 50px;
+}
+footer .container .row .col-md-4{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer p{
+    color: white;
+    font-size: 11px;
+}
+footer i{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#footerIcon1{
+    background-color: #2e2d2d;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    margin-left: 170px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footerIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+}
+.footerIcon i{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.endpart{
+    background-color: #2e2d2d;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
